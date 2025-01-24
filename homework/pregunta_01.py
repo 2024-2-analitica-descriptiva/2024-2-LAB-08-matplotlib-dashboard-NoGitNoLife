@@ -6,7 +6,7 @@ import pandas as pd
 import os
 
 def load_data():
-    csvloc = "files\input\shipping-data.csv"
+    csvloc = "files/input/shipping-data.csv"
     df = pd.read_csv(csvloc)
     return df
 
@@ -112,7 +112,7 @@ def generate_html(docdest):
 
 def pregunta_01():
     docdest = "docs"
-    # Create the directory if it doesn't exist
+    #   Create the directory if it doesn't exist
     if not os.path.exists(docdest):
         os.makedirs(docdest)
     
